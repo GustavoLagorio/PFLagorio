@@ -1,0 +1,372 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f9d1d1;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f9d1d1;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Modifiaciones al nav */
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar {
+    padding: 0;
+}
+
+
+/*Modificaciones index.html*/
+
+div.main-index {
+    margin: 20px 10px;
+}
+
+div.index-card {
+    height: 75vh;
+    min-height: 550px;
+}
+
+div.index-card img {
+    height: 65%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 1em;
+}
+
+div.card-body {
+    margin-top: 5px;
+    height: 30%;
+}
+
+h5 {
+    font-size: 1.4em;
+}
+
+h2 {
+    text-align: center;
+}
+
+/*Modificaciones de la galeria slide*/
+
+div.carousel-inner {
+    width: 100%;
+    margin: 0 5%;
+}
+
+div.carousel-item, div.carrousel-item.active {
+    width: 100%;
+}
+
+div.carousel-item img {
+    width: 90%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 1em;
+}
+
+div.carousel.slide {
+    width: 90%;
+    margin: auto;
+    max-width: 500px;
+}
+
+/*Footer estilo*/
+
+footer {
+    display: flex;
+}
+
+div.divisor {
+    height: 10vh;
+    width: 100%;
+    background-image: url(../assets/separdor5.png);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 20px 0;
+}
+
+a.volver {
+    margin: 30px 20px;
+}
+
+/*redes sociales*/
+div.social {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    padding-left: 5%;
+    letter-spacing: 1em;
+    margin: 30px 20px;
+}
+
+a.icon-facebook2:visited,
+a.icon-instagram:visited,
+a.icon-tiktok:visited,
+a.icon-whatsapp:visited {
+    color: black;
+}
+
+a.icon-facebook2,
+a.icon-instagram,
+a.icon-tiktok,
+a.icon-whatsapp {
+    color: black;
+    font-size: 1.5em;
+    text-decoration: none;
+}
+
+/*Inicio estilo tienda.html*/
+
+/*Estilo Navegacion de la tienda*/
+
+ul.nav-tienda {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    list-style: none;
+    text-align: center;
+}
+
+div.main-tienda {
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: repeat(6, 60vh);
+    justify-items: center;
+    margin: 20px 5%;
+    row-gap: 20px;
+}
+
+/*Estilo articulo de tienda*/
+
+div.articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+div.articulo img {
+    height: 70%;
+    object-fit: cover;
+    border-radius: 1em;
+}
+
+div.articulo a {
+    margin-top: 10px;
+}
+
+/*Estilo responsive tienda*/
+
+@media screen and (min-width: 480px) {
+    div.main-tienda {
+        display: grid;
+        grid-template-columns: 45vw 45vw;
+        grid-template-rows: repeat(3, 70vh);
+        justify-items: center;
+        margin: 20px 5%;
+        row-gap: 20px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    div.main-tienda {
+        display: grid;
+        grid-template-columns: 30vw 30vw 30vw;
+        grid-template-rows: repeat(2, 100vh);
+        justify-items: center;
+        margin: 20px 5%;
+        row-gap: 20px;
+    }
+}
+
+
+/*Estilo pagina contacto.html*/
+
+div.main-contacto {
+    width: 90%;
+    display: grid;
+    margin: 20px 5%;
+    grid-template-columns: 40vw 50vw;
+    grid-template-rows: repeat(6, 25vh);
+    grid-template-areas: 
+    "img-contacto1 whatsapp"
+    "img-contacto1 whatsapp"
+    "img-contacto1 redes"
+    "img-contacto2 redes"
+    "img-contacto2 newsletter"
+    "img-contacto2 newsletter";
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+div.img-contacto1 {
+    grid-area: img-contacto1;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+div.img-contacto2 {
+    grid-area: img-contacto2;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+div.img-contacto1 img {
+    height: 100%;
+    object-position: center center;
+    object-fit: cover;
+}
+div.img-contacto2 img {
+    height: 100%;
+    object-position: center center;
+    object-fit: cover;
+}
+
+
+div.contacto-whatsapp {
+    grid-area: whatsapp;
+    padding: 20px 0;
+}
+
+div.contacto-redes {
+    grid-area: redes;
+    padding: 20px 0;
+}
+
+div.contacto-newsletter {
+    grid-area: newsletter;
+    padding: 20px 0;
+}
+
+input.email {
+    width: 100%;
+}
+
+/*Estilo responsive pagina contacto.html*/
+
+@media screen and (min-width: 450px) {
+    div.img-contacto2 img {
+        width: 100%;
+        object-position: center center;
+        object-fit: cover;
+    }
+}
+
+@media screen and (min-width: 630px) {
+    div.main-contacto {
+        width: 90%;
+        display: grid;
+        margin: 20px 5%;
+        grid-template-columns: 25vw 40vw 25vw;
+        grid-template-rows: 30vh 30vh 30vh;
+        grid-template-areas: 
+        "img-contacto1 whatsapp img-contacto2"
+        "img-contacto1 redes img-contacto2"
+        "img-contacto1 newsletter img-contacto2";
+        column-gap: 10px;
+    }
+}
+
+
+/*Estilo pagina acerca.html*/
+
+main.main-acerca {
+    width: 90%;
+    margin: 20px 5%;
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 7vh 35vh 50vh 40vh 7vh 50vh;
+    grid-template-areas: 
+    "title-acerca"
+    "historia1"
+    "img-acerca"
+    "historia2"
+    "title-gallery"
+    "galeria";
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+div.title-acerca {
+    grid-area: title-acerca;
+    text-align: center;
+}
+
+article.historia1 {
+    grid-area: historia1;
+    align-self: center;
+}
+
+article.historia2 {
+    grid-area: historia2;
+    align-self: center;
+}
+
+div.img-acerca {
+    grid-area: img-acerca;
+    overflow: hidden;
+    border-radius: 1em;
+    justify-self: center;
+}
+
+div.img-acerca img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 1em;
+}
+
+div.title-gallery {
+    grid-area: title-gallery;
+    text-align: center;
+}
+
+div.gallery {
+    grid-area: galeria;
+    height: 100%;
+    width: 80%;
+    justify-self: center;
+}
+
+.slide-acerca {
+    height: 100%;
+    width: 100%;
+}
+
+div.slide-acerca img {
+    border-radius: 1em;
+    height: 100%;
+}
+
+@media screen and (min-width: 767px) {
+    main.main-acerca {
+        width: 90%;
+        margin: 20px 5%;
+        display: grid;
+        grid-template-columns: 45vw 45vw; 
+        grid-template-rows: 7vh 35vh 50vh 40vh 7vh 50vh;
+        grid-template-areas: 
+        "title-acerca"
+        "historia1"
+        "img-acerca"
+        "historia2"
+        "title-gallery"
+        "galeria";
+        row-gap: 10px;
+        column-gap: 10px;    
+}
+}
