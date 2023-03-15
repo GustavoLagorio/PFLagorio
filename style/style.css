@@ -352,6 +352,9 @@ div.slide-acerca img {
     height: 100%;
 }
 
+
+ /*Adaptacion responsive acerca*/
+ 
 @media screen and (min-width: 768px) {
     main.main-acerca {
         width: 90%;
