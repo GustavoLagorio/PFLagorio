@@ -62,7 +62,8 @@ div.carousel-inner {
     margin: 0 5%;
 }
 
-div.carousel-item, div.carrousel-item.active {
+div.carousel-item,
+div.carrousel-item.active {
     width: 100%;
 }
 
@@ -200,13 +201,13 @@ div.main-contacto {
     margin: 20px 5%;
     grid-template-columns: 40vw 50vw;
     grid-template-rows: repeat(6, 25vh);
-    grid-template-areas: 
-    "img-contacto1 whatsapp"
-    "img-contacto1 whatsapp"
-    "img-contacto1 redes"
-    "img-contacto2 redes"
-    "img-contacto2 newsletter"
-    "img-contacto2 newsletter";
+    grid-template-areas:
+        "img-contacto1 whatsapp"
+        "img-contacto1 whatsapp"
+        "img-contacto1 redes"
+        "img-contacto2 redes"
+        "img-contacto2 newsletter"
+        "img-contacto2 newsletter";
     column-gap: 10px;
     row-gap: 10px;
 }
@@ -230,6 +231,7 @@ div.img-contacto1 img {
     object-position: center center;
     object-fit: cover;
 }
+
 div.img-contacto2 img {
     height: 100%;
     object-position: center center;
@@ -273,10 +275,10 @@ input.email {
         margin: 20px 5%;
         grid-template-columns: 25vw 40vw 25vw;
         grid-template-rows: 30vh 30vh 30vh;
-        grid-template-areas: 
-        "img-contacto1 whatsapp img-contacto2"
-        "img-contacto1 redes img-contacto2"
-        "img-contacto1 newsletter img-contacto2";
+        grid-template-areas:
+            "img-contacto1 whatsapp img-contacto2"
+            "img-contacto1 redes img-contacto2"
+            "img-contacto1 newsletter img-contacto2";
         column-gap: 10px;
     }
 }
@@ -290,13 +292,13 @@ main.main-acerca {
     display: grid;
     grid-template-columns: 90vw;
     grid-template-rows: 7vh 35vh 50vh 40vh 7vh 50vh;
-    grid-template-areas: 
-    "title-acerca"
-    "historia1"
-    "img-acerca"
-    "historia2"
-    "title-gallery"
-    "galeria";
+    grid-template-areas:
+        "title-acerca"
+        "historia1"
+        "img-acerca"
+        "historia2"
+        "title-gallery"
+        "galeria";
     row-gap: 10px;
     column-gap: 10px;
 }
@@ -353,24 +355,24 @@ div.slide-acerca img {
 }
 
 
- /*Adaptacion responsive acerca*/
- 
+/*Adaptacion responsive acerca*/
+
 @media screen and (min-width: 768px) {
     main.main-acerca {
         width: 90%;
         margin: 20px 5%;
         display: grid;
-        grid-template-columns: 40vw 50vw; 
+        grid-template-columns: 40vw 50vw;
         grid-template-rows: 7vh 40vh 40vh 7vh 50vh;
-        grid-template-areas: 
-        "title-acerca title-acerca"
-        "historia1 img-acerca"
-        "historia2 img-acerca"
-        "title-gallery title-gallery"
-        "galeria galeria";
+        grid-template-areas:
+            "title-acerca title-acerca"
+            "historia1 img-acerca"
+            "historia2 img-acerca"
+            "title-gallery title-gallery"
+            "galeria galeria";
         row-gap: 10px;
-        column-gap: 10px;    
-}
+        column-gap: 10px;
+    }
 }
 
 @media screen and (min-width: 1440px) {
@@ -378,13 +380,73 @@ div.slide-acerca img {
         width: 90%;
         margin: 20px 5%;
         display: grid;
-        grid-template-columns: 25vw 30vw 35vw; 
+        grid-template-columns: 25vw 30vw 35vw;
         grid-template-rows: 7vh 50vh 50vh;
-        grid-template-areas: 
-        "title-acerca title-acerca title-gallery"
-        "historia1 img-acerca galeria"
-        "historia2 img-acerca galeria";
+        grid-template-areas:
+            "title-acerca title-acerca title-gallery"
+            "historia1 img-acerca galeria"
+            "historia2 img-acerca galeria";
         row-gap: 10px;
-        column-gap: 10px;    
+        column-gap: 10px;
+    }
 }
+
+/*Estilo de los articulos a comprar*/
+
+main.main-articulo {
+    width: 90%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 10vh 100vw 40vh 35vh;
+    grid-template-areas:
+        "title-articulo"
+        "img-articulo"
+        "descripcion"
+        "porciones";
+}
+
+div.title-articulo {
+    grid-area: title-articulo;
+    text-align: center;
+}
+
+div.img-articulo {
+    width: 100%;
+    grid-area: img-articulo;
+    border-radius: 1em;
+    overflow: hidden;
+    
+}
+
+div.img-articulo img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+        
+}
+
+div.descripcion {
+    grid-area: descripcion;
+}
+
+div.porciones {
+    grid-area: porciones;
+}
+
+form.porciones {
+    display: grid;
+    grid-template-columns: 90vw;
+    grid-template-rows: 15vh 20vh;
+    grid-area: 
+    "porciones"
+    "botones";
+}
+
+form.porciones select {
+    grid-area: porciones;
+}
+
+form.porciones a, form.porciones button{
+    grid-area: botones;
 }
