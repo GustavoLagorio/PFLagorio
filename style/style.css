@@ -57,6 +57,11 @@ h2 {
 
 /*Modificaciones de la galeria slide*/
 
+div.gallery {
+    width: 100%;
+    margin: 5% 10%;
+}
+
 div.carousel-inner {
     width: 100%;
     margin: 0 5%;
@@ -398,7 +403,7 @@ main.main-articulo {
     margin: 5%;
     display: grid;
     grid-template-columns: 90vw;
-    grid-template-rows: 10vh 100vw 40vh 35vh;
+    grid-template-rows: 10vh 100vw 50vh 35vh;
     grid-template-areas:
         "title-articulo"
         "img-articulo"
@@ -438,15 +443,52 @@ form.porciones {
     display: grid;
     grid-template-columns: 90vw;
     grid-template-rows: 15vh 20vh;
-    grid-area: 
-    "porciones"
+    grid-template-areas: 
+    "porciones-form"
     "botones";
+    gap: 10px;
 }
 
-form.porciones select {
-    grid-area: porciones;
+select {
+    grid-area: porciones-form;
+    height: max-content;
+    width: max-content;
+    align-self: center;
 }
 
-form.porciones a, form.porciones button{
+form.porciones a {
     grid-area: botones;
+    height: max-content;
+    width: max-content;
+    align-self: center;
+    justify-self: right;
+}
+
+form.porciones button {
+    grid-area: botones;
+    height: max-content;
+    width: max-content;
+    align-self: center;
+    justify-self: left;
+}
+
+@media (min-width: 767px) {
+    main.main-articulo {
+        width: 90%;
+        margin: 5%;
+        display: grid;
+        grid-template-columns: 40vw 50vw;
+        grid-template-rows: 10vh 45vw 35vh;
+        grid-template-areas:
+            "title-articulo title-articulo"
+            "descripcion img-articulo"
+            "porciones porciones";
+        gap: 10px;    
+}
+div.img-articulo img {
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+        
+}
 }
