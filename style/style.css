@@ -57,9 +57,9 @@ h2 {
 
 /*Modificaciones de la galeria slide*/
 
-div.gallery {
-    width: 100%;
-    margin: 5% 10%;
+div.gallery-index {
+    width: 90vw;
+    margin: 5% 5%;
 }
 
 div.carousel-inner {
@@ -92,7 +92,7 @@ footer {
 }
 
 div.divisor {
-    height: 10vh;
+    height: 15vh;
     width: 100%;
     background-image: url(../assets/separdor5.png);
     background-position: center center;
@@ -342,7 +342,7 @@ div.title-gallery {
     text-align: center;
 }
 
-div.gallery {
+div.gallery-acerca {
     grid-area: galeria;
     height: 100%;
     width: 80%;
@@ -472,17 +472,19 @@ form.porciones button {
     justify-self: left;
 }
 
+/*Responsive de los articulos*/
+
 @media (min-width: 767px) {
     main.main-articulo {
         width: 90%;
         margin: 5%;
         display: grid;
         grid-template-columns: 40vw 50vw;
-        grid-template-rows: 10vh 45vw 35vh;
+        grid-template-rows: 10vh 40vh 40vh;
         grid-template-areas:
             "title-articulo title-articulo"
             "descripcion img-articulo"
-            "porciones porciones";
+            "porciones img-articulo";
         gap: 10px;    
 }
 div.img-articulo img {
@@ -491,4 +493,84 @@ div.img-articulo img {
     object-position: center center;
         
 }
+form.porciones {
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: 
+    "porciones-form"
+    "botones";
+    gap: 10px;
+}
+}
+
+
+/* Estilo rtecetas.html */
+
+h1 {
+    text-align: center;
+}
+
+a.list-group-item {
+    height: 20vh;
+    width: 100%;
+}
+
+div.row.recipes-list {
+    width: 100%;
+}
+
+div.recipes {
+    padding: 0;
+    text-align: center;
+}
+
+a.receta1 {
+    background-image: url(../assets/tortas/torta19.jpeg);
+    background-position: center center;
+    background-size: cover;
+    color: #0d6efd;
+    font-weight: bolder;
+    padding-top: 15vh;
+}
+
+a.receta2 {
+    background-image: url(../assets/tortas/torta17.jpeg);
+    background-position: center center;
+    background-size: cover;
+    color: #0d6efd;
+    font-weight: bolder;
+    padding-top: 15vh;
+}
+
+a.receta3 {
+    background-image: url(../assets/tortas/torta10.jpeg);
+    background-position: center center;
+    background-size: cover;
+    color: #0d6efd;
+    font-weight: bolder;
+    padding-top: 15vh;
+}
+
+a.receta4 {
+    background-image: url(../assets/tortas/torta4.jpeg);
+    background-position: center center;
+    background-size: cover;
+    color: #0d6efd;
+    font-weight: bolder;
+    padding-top: 15vh;
+}
+
+/* Responsive recetario */
+
+@media (min-width: 768px) {
+    a.list-group-item {
+        height: 40vh;
+        width: 100%;
+    }
+
+    a.receta1, a.receta2, a.receta3, a.receta4 {
+        padding-top: 30vh;
+    }
+
 }
