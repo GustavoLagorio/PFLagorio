@@ -1,0 +1,48 @@
+
+
+div.img-contacto1 {
+    grid-area: img-contacto1;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+div.img-contacto2 {
+    grid-area: img-contacto2;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1em;
+}
+
+div.img-contacto1 img {
+    height: 100%;
+    object-position: center center;
+    object-fit: cover;
+}
+
+div.img-contacto2 img {
+    height: 100%;
+    object-position: center center;
+    object-fit: cover;
+}
+
+
+div.contacto-whatsapp {
+    grid-area: whatsapp;
+    padding: 20px 0;
+}
+
+div.contacto-redes {
+    grid-area: redes;
+    padding: 20px 0;
+}
+
+div.contacto-newsletter {
+    grid-area: newsletter;
+    padding: 20px 0;
+}
+
+input.email {
+    width: 100%;
+}
+
