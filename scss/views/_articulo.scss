@@ -1,52 +1,27 @@
-main.main-articulo {
-    width: 90%;
-    margin: 5%;
-    display: grid;
-    grid-template-columns: 90vw;
-    grid-template-rows: 10vh 100vw 50vh 35vh;
-    grid-template-areas:
-        "title-articulo"
-        "img-articulo"
-        "descripcion"
-        "porciones";
-}
-
-div.title-articulo {
+// Maquetado en _grid.scss//
+.title-articulo {
     grid-area: title-articulo;
     text-align: center;
 }
 
-div.img-articulo {
+.img-articulo {
     width: 100%;
     grid-area: img-articulo;
     border-radius: 1em;
     overflow: hidden;
-    
+    img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+    }    
 }
 
-div.img-articulo img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center center;
-        
-}
-
-div.descripcion {
+.descripcion {
     grid-area: descripcion;
 }
 
 div.porciones {
     grid-area: porciones;
-}
-
-form.porciones {
-    display: grid;
-    grid-template-columns: 90vw;
-    grid-template-rows: 15vh 20vh;
-    grid-template-areas: 
-    "porciones-form"
-    "botones";
-    gap: 10px;
 }
 
 select {
@@ -56,50 +31,22 @@ select {
     align-self: center;
 }
 
-form.porciones a {
+form.porciones  {
+    a {
     grid-area: botones;
     height: max-content;
     width: max-content;
     align-self: center;
     justify-self: right;
 }
+}
 
-form.porciones button {
+form.porciones  {
+    button {
     grid-area: botones;
     height: max-content;
     width: max-content;
     align-self: center;
     justify-self: left;
-}
-
-/*Responsive de los articulos*/
-
-@media (min-width: 767px) {
-    main.main-articulo {
-        width: 90%;
-        margin: 5%;
-        display: grid;
-        grid-template-columns: 40vw 50vw;
-        grid-template-rows: 10vh 40vh 40vh;
-        grid-template-areas:
-            "title-articulo title-articulo"
-            "descripcion img-articulo"
-            "porciones img-articulo";
-        gap: 10px;    
-}
-div.img-articulo img {
-    height: 100%;
-    object-fit: cover;
-    object-position: center center;
-        
-}
-form.porciones {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: 
-    "porciones-form"
-    "botones";
-    gap: 10px;
 }
 }

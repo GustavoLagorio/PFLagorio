@@ -1,58 +1,60 @@
-div.main-index {
-    margin: 20px 10px;
-}
+// Maquetado con Bootstrap//
 
-div.index-card {
+.main-index {
+  margin: 20px 10px;
+
+  index-card {
     height: 75vh;
     min-height: 550px;
-}
 
-div.index-card img {
-    height: 65%;
-    object-fit: cover;
-    object-position: center center;
-    border-radius: 1em;
-}
+    img {
+      height: 65%;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 1em;
+    }
 
-div.card-body {
-    margin-top: 5px;
-    height: 30%;
-}
+    card-body {
+      margin-top: 5px;
+      height: 30%;
 
-h5 {
-    font-size: 1.4em;
-}
-
-h2 {
-    text-align: center;
+      h5 {
+        font-size: 1.4em;
+      }
+    }
+  }
 }
 
 /*Modificaciones de la galeria slide*/
 
-div.gallery-index {
-    width: 90vw;
-    margin: 5% 5%;
-}
+.gallery-index {
+  width: 90vw;
+  margin: 5% 5%;
 
-div.carousel-inner {
-    width: 100%;
-    margin: 0 5%;
-}
+  h2 {
+    text-align: center;
+  }
 
-div.carousel-item,
-div.carrousel-item.active {
-    width: 100%;
-}
-
-div.carousel-item img {
-    width: 90%;
-    object-fit: cover;
-    object-position: center center;
-    border-radius: 1em;
-}
-
-div.carousel.slide {
+  .carousel.slide {
     width: 90%;
     margin: auto;
     max-width: 500px;
+
+    .carousel-inner {
+      width: 100%;
+      margin: 0 5%;
+
+      .carousel-item,
+      .carrousel-item.active {
+        width: 100%;
+
+        img {
+            width: 90%;
+            object-fit: cover;
+            object-position: center center;
+            border-radius: 1em;
+          }
+      }
+    }
+  }
 }

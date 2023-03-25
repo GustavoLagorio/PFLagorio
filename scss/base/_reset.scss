@@ -1,14 +1,13 @@
 * {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #f9d1d1;
+    background-color: color(main);
     box-sizing: border-box;
 }
 
 body {
-    background-color: #f9d1d1;
+    background-color: color(main);
 }
 
 a {
     text-decoration: none;
-    color: black;
+    color: color(font);
 }

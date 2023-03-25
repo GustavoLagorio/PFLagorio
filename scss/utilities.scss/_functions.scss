@@ -1,0 +1,11 @@
+// Funcion selectora de tamaños de pantalla//
+
+@function view($view-name) {
+  @return map-get($responsive-views, $view-name);
+}
+
+// Funcion para obtener colores//
+
+@function color($color-name) {
+  @return map-get($color, $color-name);
+}

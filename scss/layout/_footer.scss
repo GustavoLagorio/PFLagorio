@@ -2,7 +2,7 @@ footer {
     display: flex;
 }
 
-div.divisor {
+.divisor {
     height: 15vh;
     width: 100%;
     background-image: url(../assets/separdor5.png);
@@ -17,7 +17,7 @@ a.volver {
 }
 
 /*redes sociales*/
-div.social {
+.social {
     width: 100%;
     display: flex;
     justify-content: right;
@@ -30,14 +30,14 @@ a.icon-facebook2:visited,
 a.icon-instagram:visited,
 a.icon-tiktok:visited,
 a.icon-whatsapp:visited {
-    color: black;
+    color: color(font);
 }
 
 a.icon-facebook2,
 a.icon-instagram,
 a.icon-tiktok,
 a.icon-whatsapp {
-    color: black;
+    color: color(font);
     font-size: 1.5em;
     text-decoration: none;
 }

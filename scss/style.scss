@@ -1,4 +1,25 @@
-html {
-    color: red;
-    font-size: 1em;
-}
+// Importacion archivos de carpeta utilities//
+
+@import "./utilities.scss/_variables.scss";
+@import "./utilities.scss/_functions.scss";
+// @import "./utilities.scss/_mixins.scs";
+
+// Importacion archivos carpeta base//
+
+@import "./base/_reset.scss";
+@import "./base/_typo.scss";
+
+// Importacion archivos carpeta layout//
+
+@import "./layout/_nav.scss";
+@import "./layout/_grid.scss";
+@import "./layout/_footer.scss";
+
+// Importacion archivos carpeta views//
+
+@import "./views/_index.scss";
+@import "./views/_tienda.scss";
+@import "./views/_articulo.scss";
+@import "./views/_acerca.scss";
+@import "./views/_recetas.scss";
+@import "./views/_contacto.scss";
