@@ -1,0 +1,7 @@
+//Mixin para estilar imagenes//
+
+@mixin imagen ($fit:cover, $position: center center, $radius: 1em){
+  object-fit: $fit;
+  object-position: $position;
+  border-radius: $radius;
+}

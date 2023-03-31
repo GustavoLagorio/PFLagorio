@@ -1,6 +1,8 @@
 * {
   background-color: #f9d1d1;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
 
 body {
   background-color: #f9d1d1; }
@@ -10,7 +12,8 @@ a {
   color: black; }
 
 * {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px; }
 
 .navbar-brand {
   padding: 0; }
@@ -18,134 +21,11 @@ a {
 .navbar {
   padding: 0; }
 
-.nav-tienda {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  list-style: none;
-  text-align: center; }
-
-.main-tienda {
-  display: grid;
-  grid-template-columns: 90vw;
-  grid-template-rows: repeat(6, 60vh);
-  justify-items: center;
-  margin: 20px 5%;
-  row-gap: 20px; }
-
-/*Adaptacion responsive tienda*/
-@media (min-width: 480px) {
-  div.main-tienda {
-    display: grid;
-    grid-template-columns: 45vw 45vw;
-    grid-template-rows: repeat(3, 70vh);
-    justify-items: center;
-    margin: 20px 5%;
-    row-gap: 20px; } }
-
-@media (min-width: 992px) {
-  div.main-tienda {
-    display: grid;
-    grid-template-columns: 30vw 30vw 30vw;
-    grid-template-rows: repeat(2, 100vh);
-    justify-items: center;
-    margin: 20px 5%;
-    row-gap: 20px; } }
-
-.main-articulo {
-  width: 90%;
-  margin: 5%;
-  display: grid;
-  grid-template-columns: 90vw;
-  grid-template-rows: 10vh 100vw 50vh 35vh;
-  grid-template-areas: "title-articulo" "img-articulo" "descripcion" "porciones"; }
-
-form.porciones {
-  display: grid;
-  grid-template-columns: 90vw;
-  grid-template-rows: 15vh 20vh;
-  grid-template-areas: "porciones-form" "botones";
-  gap: 10px; }
-
-@media (min-width: 767px) {
-  main.main-articulo {
-    width: 90%;
-    margin: 5%;
-    display: grid;
-    grid-template-columns: 40vw 50vw;
-    grid-template-rows: 10vh 40vh 40vh;
-    grid-template-areas: "title-articulo title-articulo" "descripcion img-articulo" "porciones img-articulo";
-    gap: 10px; }
-  form.porciones {
-    display: grid;
-    grid-template-columns: 90%;
-    grid-template-rows: 1fr 1fr;
-    grid-template-areas: "porciones-form" "botones";
-    gap: 10px; } }
-
-.main-acerca {
-  width: 90%;
-  margin: 20px 5%;
-  display: grid;
-  grid-template-columns: 90vw;
-  grid-template-rows: 7vh 35vh 50vh 40vh 7vh 50vh;
-  grid-template-areas: "title-acerca" "historia1" "img-acerca" "historia2" "title-gallery" "galeria";
-  row-gap: 10px;
-  column-gap: 10px; }
-
-@media (min-width: 767px) {
-  .main-acerca {
-    width: 90%;
-    margin: 20px 5%;
-    display: grid;
-    grid-template-columns: 40vw 50vw;
-    grid-template-rows: 7vh 40vh 40vh 7vh 50vh;
-    grid-template-areas: "title-acerca title-acerca" "historia1 img-acerca" "historia2 img-acerca" "title-gallery title-gallery" "galeria galeria";
-    row-gap: 10px;
-    column-gap: 10px; } }
-
-@media (min-width: 1440px) {
-  .main-acerca {
-    width: 90%;
-    margin: 20px 5%;
-    display: grid;
-    grid-template-columns: 25vw 30vw 35vw;
-    grid-template-rows: 7vh 50vh 50vh;
-    grid-template-areas: "title-acerca title-acerca title-gallery" "historia1 img-acerca galeria" "historia2 img-acerca galeria";
-    row-gap: 10px;
-    column-gap: 10px; } }
-
-.main-contacto {
-  width: 90%;
-  display: grid;
-  margin: 20px 5%;
-  grid-template-columns: 40vw 50vw;
-  grid-template-rows: repeat(6, 25vh);
-  grid-template-areas: "img-contacto1 whatsapp" "img-contacto1 whatsapp" "img-contacto1 redes" "img-contacto2 redes" "img-contacto2 newsletter" "img-contacto2 newsletter";
-  column-gap: 10px;
-  row-gap: 10px; }
-
-@media (min-width: 630px) {
-  .main-contacto {
-    width: 90%;
-    display: grid;
-    margin: 20px 5%;
-    grid-template-columns: 25vw 40vw 25vw;
-    grid-template-rows: 30vh 30vh 30vh;
-    grid-template-areas: "img-contacto1 whatsapp img-contacto2" "img-contacto1 redes img-contacto2" "img-contacto1 newsletter img-contacto2";
-    column-gap: 10px; } }
-
-@media (min-width: null) {
-  .img-contacto2 img {
-    width: 100%;
-    object-position: center center;
-    object-fit: cover; } }
-
 footer {
   display: flex; }
 
 .divisor {
-  height: 15vh;
+  height: 17vh;
   width: 100%;
   background-image: url(../assets/separdor5.png);
   background-position: center center;
@@ -180,19 +60,20 @@ a.icon-whatsapp {
   text-decoration: none; }
 
 .main-index {
-  margin: 20px 10px; }
-  .main-index index-card {
-    height: 75vh;
-    min-height: 550px; }
-    .main-index index-card img {
+  margin: 20px 0;
+  margin: 20px 5px; }
+  .main-index .index-card {
+    height: 80vh;
+    padding: 10px; }
+    .main-index .index-card img {
       height: 65%;
       object-fit: cover;
       object-position: center center;
       border-radius: 1em; }
-    .main-index index-card card-body {
+    .main-index .index-card .card-body {
       margin-top: 5px;
       height: 30%; }
-      .main-index index-card card-body h5 {
+      .main-index .index-card .card-body h5 {
         font-size: 1.4em; }
 
 /*Modificaciones de la galeria slide*/
@@ -218,92 +99,137 @@ a.icon-whatsapp {
           object-position: center center;
           border-radius: 1em; }
 
-.articulo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  height: 100%; }
-  .articulo img {
-    height: 70%;
-    object-fit: cover;
-    border-radius: 1em; }
-  .articulo a {
-    margin-top: 10px; }
-
-.title-articulo {
-  grid-area: title-articulo;
+ul.nav-tienda {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  list-style: none;
   text-align: center; }
 
-.img-articulo {
-  width: 100%;
-  grid-area: img-articulo;
-  border-radius: 1em;
-  overflow: hidden; }
-  .img-articulo img {
+.main-tienda {
+  display: grid;
+  grid-template-columns: 90vw;
+  grid-template-rows: repeat(6, 60vh);
+  justify-items: center;
+  margin: 20px 5%;
+  row-gap: 20px; }
+  .main-tienda .articulo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     width: 100%;
-    object-fit: cover;
-    object-position: center center; }
+    height: 100%; }
+    .main-tienda .articulo img {
+      height: 70%;
+      object-fit: cover;
+      border-radius: 1em; }
+    .main-tienda .articulo a {
+      margin-top: 10px; }
 
-.descripcion {
-  grid-area: descripcion; }
+/*Adaptacion responsive tienda*/
+@media (min-width: 480px) {
+  div.main-tienda {
+    display: grid;
+    grid-template-columns: 45vw 45vw;
+    grid-template-rows: repeat(3, 70vh);
+    justify-items: center;
+    margin: 20px 5%;
+    row-gap: 20px; } }
 
-div.porciones {
-  grid-area: porciones; }
+@media (min-width: 992px) {
+  div.main-tienda {
+    display: grid;
+    grid-template-columns: 30vw 30vw 30vw;
+    grid-template-rows: repeat(2, 100vh);
+    justify-items: center;
+    margin: 20px 5%;
+    row-gap: 20px; } }
 
-select {
-  grid-area: porciones-form;
-  height: max-content;
-  width: max-content;
-  align-self: center; }
+.main-articulo {
+  width: 90%;
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 90vw;
+  grid-template-rows: 10vh 100vw 60vh 15vh;
+  grid-template-areas: "title-articulo" "img-articulo" "descripcion" "porciones"; }
+  .main-articulo .title-articulo {
+    grid-area: title-articulo;
+    text-align: center; }
+  .main-articulo .img-articulo {
+    width: 100%;
+    grid-area: img-articulo;
+    border-radius: 1em;
+    overflow: hidden; }
+    .main-articulo .img-articulo img {
+      width: 100%;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 1em; }
+  .main-articulo .descripcion {
+    grid-area: descripcion; }
+    .main-articulo .descripcion p {
+      margin: 10px; }
+  .main-articulo form.porciones {
+    grid-area: porciones;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center; }
+    .main-articulo form.porciones div.botones {
+      display: flex;
+      justify-content: space-evenly; }
 
-form.porciones a {
-  grid-area: botones;
-  height: max-content;
-  width: max-content;
-  align-self: center;
-  justify-self: right; }
+@media (min-width: 767px) {
+  main.main-articulo {
+    width: 90%;
+    margin: 5%;
+    display: grid;
+    grid-template-columns: 40vw 50vw;
+    grid-template-rows: 10vh 55vh 40vh;
+    grid-template-areas: "title-articulo title-articulo" "descripcion img-articulo" "porciones img-articulo";
+    gap: 10px; } }
 
-form.porciones button {
-  grid-area: botones;
-  height: max-content;
-  width: max-content;
-  align-self: center;
-  justify-self: left; }
+@media (min-width: 992px) {
+  div.select {
+    align-self: center; } }
 
-div.title-acerca {
-  grid-area: title-acerca;
-  text-align: center; }
-
-.historia1 {
-  grid-area: historia1;
-  align-self: center; }
-
-.historia2 {
-  grid-area: historia2;
-  align-self: center; }
-
-.img-acerca {
-  grid-area: img-acerca;
-  overflow: hidden;
-  border-radius: 1em;
-  justify-self: center; }
-  .img-acerca img {
+.main-acerca {
+  width: 90%;
+  margin: 20px 5%;
+  display: grid;
+  grid-template-columns: 90vw;
+  grid-template-rows: 7vh 35vh 50vh 40vh 7vh 50vh;
+  grid-template-areas: "title-acerca" "historia1" "img-acerca" "historia2" "title-gallery" "galeria";
+  row-gap: 10px;
+  column-gap: 10px; }
+  .main-acerca div.title-acerca {
+    grid-area: title-acerca;
+    text-align: center; }
+  .main-acerca .historia1 {
+    grid-area: historia1;
+    align-self: center; }
+  .main-acerca .historia2 {
+    grid-area: historia2;
+    align-self: center; }
+  .main-acerca .img-acerca {
+    grid-area: img-acerca;
+    overflow: hidden;
+    border-radius: 1em;
+    justify-self: center; }
+    .main-acerca .img-acerca img {
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 1em; }
+  .main-acerca .title-gallery {
+    grid-area: title-gallery;
+    text-align: center; }
+  .main-acerca .gallery-acerca {
+    grid-area: galeria;
     height: 100%;
-    object-fit: cover;
-    object-position: center center;
-    border-radius: 1em; }
-
-.title-gallery {
-  grid-area: title-gallery;
-  text-align: center; }
-
-.gallery-acerca {
-  grid-area: galeria;
-  height: 100%;
-  width: 80%;
-  justify-self: center; }
+    width: 80%;
+    justify-self: center; }
 
 .slide-acerca {
   height: 100%;
@@ -312,69 +238,112 @@ div.title-acerca {
     border-radius: 1em;
     height: 100%; }
 
+@media (min-width: 767px) {
+  .main-acerca {
+    width: 90%;
+    margin: 20px 5%;
+    display: grid;
+    grid-template-columns: 40vw 50vw;
+    grid-template-rows: 7vh 40vh 40vh 7vh 50vh;
+    grid-template-areas: "title-acerca title-acerca" "historia1 img-acerca" "historia2 img-acerca" "title-gallery title-gallery" "galeria galeria";
+    row-gap: 10px;
+    column-gap: 10px; } }
+
+@media (min-width: 1440px) {
+  .main-acerca {
+    width: 90%;
+    margin: 20px 5%;
+    display: grid;
+    grid-template-columns: 25vw 30vw 35vw;
+    grid-template-rows: 7vh 50vh 50vh;
+    grid-template-areas: "title-acerca title-acerca title-gallery" "historia1 img-acerca galeria" "historia2 img-acerca galeria";
+    row-gap: 10px;
+    column-gap: 10px; } }
+
 h1 {
   text-align: center; }
 
-.list-group-item {
-  height: 20vh;
-  width: 100%; }
+.main-recetas {
+  margin: 5%;
+  width: 90%; }
+  .main-recetas .recipes p {
+    display: flex;
+    justify-content: space-evenly; }
+    .main-recetas .recipes p button {
+      padding: 0;
+      border: 0;
+      height: 25%;
+      width: 23%;
+      border-radius: 1em; }
+      .main-recetas .recipes p button img {
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 1em;
+        width: 100%; }
+  .main-recetas .recipes .card {
+    border: 0;
+    padding: 0;
+    background-color: #f9d1d1; }
 
-.row.recipes-list {
-  width: 100%; }
-
-.recipes {
-  padding: 0;
-  text-align: center; }
-
-.receta1, .receta2, .receta3, .receta4 {
-  background-image: url(../assets/tortas/torta19.jpeg);
-  background-position: center center;
-  background-size: cover;
-  color: #0d6efd;
-  font-weight: bolder;
-  padding-top: 15vh; }
-
-.receta2 {
-  background-image: url(../assets/tortas/torta17.jpeg); }
-
-.receta3 {
-  background-image: url(../assets/tortas/torta10.jpeg); }
-
-.receta4 {
-  background-image: url(../assets/tortas/torta4.jpeg); }
-
-/* Responsive recetario */
-@media (min-width: 767px) {
-  .list-group-item {
-    height: 40vh;
+.main-contacto {
+  width: 90%;
+  display: grid;
+  margin: 20px 5%;
+  grid-template-columns: 40vw 50vw;
+  grid-template-rows: repeat(6, 25vh);
+  grid-template-areas: "img-contacto1 whatsapp" "img-contacto1 whatsapp" "img-contacto1 redes" "img-contacto2 redes" "img-contacto2 newsletter" "img-contacto2 newsletter";
+  column-gap: 10px;
+  row-gap: 10px; }
+  .main-contacto .img-contacto1 {
+    grid-area: img-contacto1;
     width: 100%;
-    padding-top: 30vh; } }
-
-.img-contacto1, .img-contacto2 {
-  grid-area: img-contacto1;
-  width: 100%;
-  overflow: hidden;
-  border-radius: 1em; }
-
-.img-contacto2 {
-  grid-area: img-contacto2; }
-
-.img-contacto1 img, .img-contacto2 img {
-  height: 100%;
-  object-position: center center;
-  object-fit: cover; }
-
-.contacto-whatsapp {
-  grid-area: whatsapp;
-  padding: 20px 0; }
-
-.contacto-redes {
-  grid-area: redes;
-  padding: 20px 0; }
-
-.contacto-newsletter {
-  grid-area: newsletter;
-  padding: 20px 0; }
+    overflow: hidden;
+    border-radius: 1em; }
+    .main-contacto .img-contacto1 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 1em; }
+  .main-contacto .img-contacto2 {
+    grid-area: img-contacto2;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1em; }
+    .main-contacto .img-contacto2 img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center center;
+      border-radius: 1em; }
+  .main-contacto .contacto-whatsapp {
+    grid-area: whatsapp;
+    padding: 20px 0; }
+  .main-contacto .contacto-redes {
+    grid-area: redes;
+    padding: 20px 0; }
+  .main-contacto .contacto-newsletter {
+    grid-area: newsletter; }
+    .main-contacto .contacto-newsletter p {
+      margin: 0; }
 
 input.email {
-  width: 100%; }
+  width: 100%;
+  margin-bottom: 10px; }
+
+@media (min-width: 630px) {
+  .main-contacto {
+    width: 90%;
+    display: grid;
+    margin: 20px 5%;
+    grid-template-columns: 25vw 40vw 25vw;
+    grid-template-rows: 30vh 30vh 30vh;
+    grid-template-areas: "img-contacto1 whatsapp img-contacto2" "img-contacto1 redes img-contacto2" "img-contacto1 newsletter img-contacto2";
+    column-gap: 10px; } }
+
+@media (min-width: null) {
+  .img-contacto2 img {
+    width: 100%;
+    object-fit: cover;
+    object-position: center center;
+    border-radius: 1em; } }

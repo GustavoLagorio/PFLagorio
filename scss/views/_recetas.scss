@@ -1,52 +1,35 @@
 //Maquetado con Bootstrap//
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
-.list-group-item {
-    height: 20vh;
-    width: 100%;
-}
+.main-recetas {
+  margin: 5%;
+  width: 90%;
 
-.row.recipes-list {
-    width: 100%;
-}
+  .recipes {
+    p {
+      display: flex;
+      justify-content: space-evenly;
 
-.recipes {
-    padding: 0;
-    text-align: center;
-}
+      button {
+        padding: 0;
+        border: 0;
+        height: 25%;
+        width: 23%;
+        border-radius: 1em;
 
-.receta1 {
-    background-image: url(../assets/tortas/torta19.jpeg);
-    background-position: center center;
-    background-size: cover;
-    color: color(links);
-    font-weight: bolder;
-    padding-top: 15vh;
-}
-
-.receta2 {
-    @extend .receta1;
-    background-image: url(../assets/tortas/torta17.jpeg);
-}
-
-.receta3 {
-    @extend .receta1;
-    background-image: url(../assets/tortas/torta10.jpeg);
-}
-
-.receta4 {
-    @extend .receta1;
-    background-image: url(../assets/tortas/torta4.jpeg);
-}
-
-/* Responsive recetario */
-
-@media (min-width: view(mid)) {
-    .list-group-item {
-        height: 40vh;
-        width: 100%;
-        padding-top: 30vh;
+        img {
+          @include imagen;
+          width: 100%;
+        }
+      }
     }
+
+    .card {
+      border: 0;
+      padding: 0;
+      background-color: color(main);
+    }
+  }
 }

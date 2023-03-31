@@ -2,7 +2,7 @@
 
 @import "./utilities.scss/_variables.scss";
 @import "./utilities.scss/_functions.scss";
-// @import "./utilities.scss/_mixins.scs";
+@import "./utilities.scss/_mixins.scss";
 
 // Importacion archivos carpeta base//
 
@@ -12,7 +12,6 @@
 // Importacion archivos carpeta layout//
 
 @import "./layout/_nav.scss";
-@import "./layout/_grid.scss";
 @import "./layout/_footer.scss";
 
 // Importacion archivos carpeta views//

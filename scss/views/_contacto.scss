@@ -1,46 +1,91 @@
+//Maquetado//
+.main-contacto {
+  width: 90%;
+  display: grid;
+  margin: 20px 5%;
+  grid-template-columns: 40vw 50vw;
+  grid-template-rows: repeat(6, 25vh);
+  grid-template-areas:
+    "img-contacto1 whatsapp"
+    "img-contacto1 whatsapp"
+    "img-contacto1 redes"
+    "img-contacto2 redes"
+    "img-contacto2 newsletter"
+    "img-contacto2 newsletter";
+  column-gap: 10px;
+  row-gap: 10px;
 
-
-.img-contacto1 {
+  .img-contacto1 {
     grid-area: img-contacto1;
     width: 100%;
     overflow: hidden;
     border-radius: 1em;
-}
 
-.img-contacto2 {
-    @extend .img-contacto1;
-    grid-area: img-contacto2;
-}
-
-.img-contacto1 {
     img {
-    height: 100%;
-    object-position: center center;
-    object-fit: cover;
-}
-}
+      width: 100%;
+      height: 100%;      
+      @include imagen;
+    }
+  }
 
-.img-contacto2 {
-    @extend .img-contacto1;
-}
+  .img-contacto2 {    
+    grid-area: img-contacto2;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 1em;
 
+    img {
+      width: 100%;
+      height: 100%;
+      @include imagen;
+    }
+  }
 
-.contacto-whatsapp {
+  .contacto-whatsapp {
     grid-area: whatsapp;
     padding: 20px 0;
-}
+  }
 
-.contacto-redes {
+  .contacto-redes {
     grid-area: redes;
     padding: 20px 0;
-}
+  }
 
-.contacto-newsletter {
+  .contacto-newsletter {
     grid-area: newsletter;
-    padding: 20px 0;
+
+    p {
+      margin: 0;
+    }
+  }
 }
 
 input.email {
-    width: 100%;
+  width: 100%;
+  margin-bottom: 10px;
 }
 
+//Adaptacion responsive pagina contacto.html//
+@media (min-width: view(small)) {
+  .main-contacto {
+    width: 90%;
+    display: grid;
+    margin: 20px 5%;
+    grid-template-columns: 25vw 40vw 25vw;
+    grid-template-rows: 30vh 30vh 30vh;
+    grid-template-areas:
+      "img-contacto1 whatsapp img-contacto2"
+      "img-contacto1 redes img-contacto2"
+      "img-contacto1 newsletter img-contacto2";
+    column-gap: 10px;
+  }
+}
+
+@media (min-width: view(xsamll)) {
+  .img-contacto2 {
+    img {
+      width: 100%;
+      @include imagen;
+    }
+  }
+}
