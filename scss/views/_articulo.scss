@@ -4,7 +4,7 @@
   margin: 5%;
   display: grid;
   grid-template-columns: 90vw;
-  grid-template-rows: 10vh 100vw 60vh 15vh;
+  grid-template-rows: 15vh 100vw 80vh 15vh;
   grid-template-areas:
     "title-articulo"
     "img-articulo"
@@ -58,7 +58,7 @@
     margin: 5%;
     display: grid;
     grid-template-columns: 40vw 50vw;
-    grid-template-rows: 10vh 55vh 40vh;
+    grid-template-rows: 15vh 60vh 40vh;
     grid-template-areas:
       "title-articulo title-articulo"
       "descripcion img-articulo"

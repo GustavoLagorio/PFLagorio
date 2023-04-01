@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Letizir</title>
+    <title>Letizir Pasteleria - Recetario</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,7 +21,10 @@
     />
     <!-- CSS Personalizado -->
     <link rel="stylesheet" href="../style/style.css" />
+    <!-- Favico -->
+  <link rel="shortcut icon" href="../assets/favico.ico">
     <!-- Fuente de Redes Sociales importadas de icons8.com-->
+    <meta name="description" content="Letizir pastelería. En esta seccion podras encontrar algunas de nuestras recetas.">
   </head>
 
   <body>
@@ -51,7 +54,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link" href="tienda.html">Tienda</a>
+              <a class="nav-link" href="tiendas/tienda-tortas/tienda.html">Tienda</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="acerca.html">Acerca</a>
@@ -67,8 +70,7 @@
       </div>
     </nav>
     <h1>Recetario</h1>
-    <!-- Estructura de listado de links importada de Bootstrap para confeccionar un recetario con estilo propio -->
-    <!-- Se agrega una clase al div para mejorar margenes -->
+    <!-- Estructura de listado de links colapsables importada de Bootstrap para confeccionar un recetario con estilo propio -->
     <div class="main-recetas">
       <div class="recipes">
         <p>
@@ -80,7 +82,7 @@
             aria-expanded="false"
             aria-controls="collapseExample"
           >
-            <img src="../assets/tortas/torta10.jpeg" alt="" />
+            <img src="../assets/tortas/torta10.jpeg" alt="Chocotorta Clásica" />
           </button>
           <button
             class="btn btn-primary"
@@ -90,7 +92,7 @@
             aria-expanded="false"
             aria-controls="collapseExample"
           >
-            <img src="../assets/tortas/torta17.jpeg" alt="" />
+            <img src="../assets/tortas/torta2a.jpeg" alt="Lemon Pie" />
           </button>
           <button
             class="btn btn-primary"
@@ -100,7 +102,10 @@
             aria-expanded="false"
             aria-controls="collapseExample"
           >
-            <img src="../assets/tortas/torta20.jpeg" alt="" />
+            <img
+              src="../assets/brownies/brownie2a.jpeg"
+              alt="Brownie Patagónico"
+            />
           </button>
           <button
             class="btn btn-primary"
@@ -110,50 +115,268 @@
             aria-expanded="false"
             aria-controls="collapseExample"
           >
-            <img src="../assets/tortas/torta11.jpeg" alt="" />
+            <img src="../assets/tortas/torta15.jpeg" alt="Chocobomba" />
           </button>
         </p>
         <div class="collapse" id="receta1">
           <div class="card card-body">
-            <h2>Receta1</h2>
+            <h2>Chocotorta Clásica</h2>
             <article>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-              voluptates, quia recusandae, cumque nostrum eos alias porro
-              corporis, molestiae tempora incidunt dolorum reiciendis minima
-              rerum aliquam! Doloremque cum enim quidem!
+              Ingredientes:
+              <ul>
+                <li>
+                  1 paquete de galletitas de chocolate tipo Oreo (o galletas de
+                  chocolate similares)
+                </li>
+                <li>750 gramos de queso crema</li>
+                <li>1 taza de azúcar</li>
+                <li>1/2 taza de leche</li>
+                <li>2 cucharaditas de esencia de vainilla</li>
+                <li>400 gramos de dulce de leche</li>
+                <li>200 gramos de chocolate semidulce rallado</li>
+                <li>1 taza de café fuerte</li>
+              </ul>
+              Instrucciones:
+              <ul>
+                <li>
+                  Triturar las galletitas de chocolate en un procesador de
+                  alimentos o colocándolas en una bolsa de plástico y
+                  golpeándolas con un rodillo hasta que estén bien molidas.
+                </li>
+                <li>
+                  En un tazón grande, batir el queso crema hasta que esté suave.
+                  Agregar el azúcar, la leche y la esencia de vainilla y mezclar
+                  hasta que estén bien combinados.
+                </li>
+                <li>
+                  Agregar el dulce de leche y seguir batiendo hasta que la
+                  mezcla esté suave y cremosa.
+                </li>
+                <li>
+                  Colocar una capa de galletas trituradas en el fondo de un
+                  molde para pastel de 22 cm. Mojar las galletas con un poco de
+                  café para que se ablanden.
+                </li>
+                <li>
+                  Agregar una capa de la mezcla de queso crema sobre las
+                  galletas y esparcir uniformemente. Luego, espolvorear una capa
+                  de chocolate rallado sobre la mezcla de queso crema.
+                </li>
+                <li>
+                  Repetir las capas de galletas, café, mezcla de queso crema y
+                  chocolate rallado hasta que se hayan utilizado todos los
+                  ingredientes, asegurándose de terminar con una capa de
+                  chocolate rallado.
+                </li>
+                <li>
+                  Cubrir el molde con papel film y refrigerar durante al menos 4
+                  horas, o hasta que esté bien fría y firme.
+                </li>
+                <li>
+                  Una vez lista, retirar la chocotorta del molde, cortar en
+                  porciones y servir fría.
+                </li>
+              </ul>
+              ¡Y listo! Esta deliciosa chocotorta es perfecta para cualquier
+              ocasión y seguramente será un éxito entre tus amigos y familiares.
+              ¡Disfrútala!
             </article>
           </div>
         </div>
         <div class="collapse" id="receta2">
           <div class="card card-body">
-            <h2>Receta2</h2>
+            <h2>Lemon Pie</h2>
             <article>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-              voluptates, quia recusandae, cumque nostrum eos alias porro
-              corporis, molestiae tempora incidunt dolorum reiciendis minima
-              rerum aliquam! Doloremque cum enim quidem!
+              Ingredientes:
+              <ul>
+                <li>1 y 1/2 tazas de galletas de vainilla trituradas</li>
+                <li>6 cucharadas de mantequilla derretida</li>
+                <li>1/4 taza de azúcar granulada</li>
+                <li>4 huevos grandes</li>
+                <li>1 taza de azúcar granulada</li>
+                <li>1/2 taza de jugo de limón fresco</li>
+                <li>2 cucharaditas de ralladura de limón</li>
+                <li>1/2 taza de crema espesa</li>
+                <li>1/4 taza de azúcar en polvo</li>
+                <li>1 cucharadita de extracto de vainilla</li>
+              </ul>
+              Instrucciones:
+              <ul>
+                <li>Precalentar el horno a 175 grados Celsius.</li>
+                <li>
+                  Mezclar las galletas trituradas, la mantequilla derretida y
+                  1/4 taza de azúcar granulada en un tazón mediano. Luego,
+                  presionar la mezcla en el fondo y los lados de un molde para
+                  pastel de 22 cm.
+                </li>
+                <li>
+                  Hornear la corteza de galleta durante 10 minutos, o hasta que
+                  esté dorada. Dejar enfriar mientras preparas el relleno.
+                </li>
+                <li>
+                  Batir los huevos y 1 taza de azúcar granulada en un tazón
+                  grande hasta que estén bien combinados. Agregar el jugo de
+                  limón y la ralladura de limón y mezclar hasta que esté suave.
+                </li>
+                <li>
+                  Verter la mezcla de limón sobre la corteza de galleta enfriada
+                  y hornear durante 25-30 minutos, o hasta que el centro esté
+                  firme al tacto. Dejar enfriar a temperatura ambiente durante 1
+                  hora.
+                </li>
+                <li>
+                  En un tazón grande, batir la crema espesa, el azúcar en polvo
+                  y el extracto de vainilla hasta que se formen picos suaves.
+                </li>
+                <li>
+                  Colocar la crema batida sobre el pastel enfriado y esparcir
+                  uniformemente. Refrigerar durante al menos 2 horas, o hasta
+                  que la crema batida esté firme.
+                </li>
+              </ul>
+              ¡Y eso es todo! Este Lemon Pie es perfecto para disfrutar como
+              postre o para compartir con amigos y familiares. ¡Espero que lo
+              disfrutes tanto como yo!
             </article>
           </div>
         </div>
         <div class="collapse" id="receta3">
           <div class="card card-body">
-            <h2>Receta3</h2>
+            <h2>Brownie Patagónico</h2>
             <article>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-              voluptates, quia recusandae, cumque nostrum eos alias porro
-              corporis, molestiae tempora incidunt dolorum reiciendis minima
-              rerum aliquam! Doloremque cum enim quidem!
+              Ingredientes:
+              <ul>
+                <li>200 gramos de chocolate semidulce</li>
+                <li>200 gramos de mantequilla</li>
+                <li>1 y 1/4 taza de azúcar granulada</li>
+                <li>4 huevos grandes</li>
+                <li>1 taza de harina de trigo</li>
+                <li>1/2 cucharadita de sal</li>
+                <li>1/2 taza de nueces picadas</li>
+                <li>1/2 taza de dulce de leche</li>
+              </ul>
+              Instrucciones:
+              <ul>
+                <li>Precalentar el horno a 175 grados Celsius.</li>
+                <li>
+                  Derretir el chocolate y la mantequilla en una cacerola a fuego
+                  medio, revolviendo constantemente hasta que estén
+                  completamente derretidos y combinados.
+                </li>
+                <li>
+                  Retirar la cacerola del fuego y agregar el azúcar granulada,
+                  mezclando bien hasta que esté bien incorporado.
+                </li>
+                <li>
+                  Agregar los huevos, uno por uno, batiendo bien después de cada
+                  adición.
+                </li>
+                <li>
+                  Agregar la harina de trigo y la sal a la mezcla de chocolate y
+                  mezclar hasta que estén bien combinados.
+                </li>
+                <li>Agregar las nueces picadas a la mezcla y mezclar.</li>
+                <li>
+                  Colocar una capa de papel manteca en el fondo de un molde para
+                  hornear cuadrado de 20 cm. Luego, verter la mezcla de brownie
+                  en el molde y esparcir uniformemente.
+                </li>
+                <li>
+                  Usando una cuchara, colocar cucharaditas de dulce de leche en
+                  la parte superior de la mezcla de brownie y hacer un patrón
+                  con un cuchillo.
+                </li>
+                <li>
+                  Hornear el brownie en el horno precalentado durante 25-30
+                  minutos, o hasta que esté cocido en el centro.
+                </li>
+                <li>
+                  Dejar enfriar el brownie en el molde durante 15 minutos antes
+                  de sacarlo del molde y cortarlo en cuadrados.
+                </li>
+              </ul>
+              ¡Y eso es todo! Este delicioso brownie patagónico es perfecto para
+              disfrutar como postre o para compartir con amigos y familiares.
+              ¡Espero que lo disfrutes tanto como yo!
             </article>
           </div>
         </div>
         <div class="collapse" id="receta4">
           <div class="card card-body">
-            <h2>Receta4</h2>
+            <h2>Chocobomba</h2>
             <article>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores
-              voluptates, quia recusandae, cumque nostrum eos alias porro
-              corporis, molestiae tempora incidunt dolorum reiciendis minima
-              rerum aliquam! Doloremque cum enim quidem!
+              Ingredientes:
+              <ul>
+                <li>1 y 1/2 taza de harina de trigo</li>
+                <li>1 y 1/2 taza de azúcar granulada</li>
+                <li>3/4 taza de cacao en polvo</li>
+                <li>1 y 1/2 cucharadita de polvo de hornear</li>
+                <li>1 y 1/2 cucharadita de bicarbonato de sodio</li>
+                <li>1 cucharadita de sal</li>
+                <li>3 huevos grandes</li>
+                <li>3/4 taza de aceite vegetal</li>
+                <li>1 taza de leche entera</li>
+                <li>2 cucharaditas de extracto de vainilla</li>
+                <li>1 taza de crema de leche</li>
+                <li>1/2 taza de chocolate semidulce picado</li>
+                <li>1/2 taza de queso crema</li>
+                <li>1/2 taza de azúcar en polvo</li>
+                <li>1 cucharadita de extracto de vainilla</li>
+              </ul>
+              Instrucciones:
+              <ul>
+                <li>
+                  Precalentar el horno a 180 grados Celsius y preparar dos
+                  moldes para pastel de 22 cm, cubriéndolos con papel manteca.
+                </li>
+                <li>
+                  En un tazón grande, mezclar la harina de trigo, el azúcar
+                  granulada, el cacao en polvo, el polvo de hornear, el
+                  bicarbonato de sodio y la sal.
+                </li>
+                <li>
+                  Agregar los huevos, el aceite vegetal, la leche y el extracto
+                  de vainilla a la mezcla de harina y batir con una batidora
+                  eléctrica hasta que esté bien combinado.
+                </li>
+                <li>
+                  Dividir la mezcla de pastel entre los dos moldes preparados y
+                  hornear durante 30-35 minutos, o hasta que un palillo
+                  insertado en el centro salga limpio.
+                </li>
+                <li>
+                  Mientras tanto, preparar el relleno de la torta chocobomba. En
+                  un tazón mediano, batir la crema de leche hasta que forme
+                  picos suaves. Agregar el chocolate semidulce picado y mezclar
+                  hasta que esté bien combinado.
+                </li>
+                <li>
+                  En otro tazón mediano, batir el queso crema, el azúcar en
+                  polvo y el extracto de vainilla hasta que estén suaves y
+                  cremosos.
+                </li>
+                <li>
+                  Una vez que los pasteles estén listos, dejar enfriar durante
+                  unos 10 minutos antes de sacarlos de los moldes y dejarlos
+                  enfriar por completo sobre una rejilla.
+                </li>
+                <li>
+                  Colocar uno de los pasteles en un plato para pastel y esparcir
+                  el relleno de crema de queso sobre la parte superior, dejando
+                  un borde de 1 cm sin relleno alrededor del borde del pastel.
+                </li>
+                <li>
+                  Colocar el otro pastel encima del relleno de crema de queso y
+                  presionar ligeramente para que se asiente.
+                </li>
+                <li>
+                  Espolvorear el pastel con cacao en polvo y decorar con fresas
+                  frescas, si lo deseas.
+                </li>
+              </ul>
+              ¡Listo! Esta deliciosa torta chocobomba es perfecta para cualquier
+              ocasión y seguramente será un éxito entre tus amigos y familiares.
+              ¡Disfrútala!
             </article>
           </div>
         </div>
