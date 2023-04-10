@@ -53,9 +53,10 @@ ul.nav-tienda {
     height: 100%;
 
     img {
-      height: 70%;
+      width: 95%;
       object-fit: cover;
       border-radius: 1em;
+      overflow: hidden;
     }
 
     a {
@@ -87,7 +88,7 @@ ul.nav-tienda {
   div.main-tienda-tortas {
     display: grid;
     grid-template-columns: 30vw 30vw 30vw;
-    grid-template-rows: repeat(2, 100vh);
+    grid-template-rows: repeat(2, 70vh);
     justify-items: center;
     margin: 20px 5%;
     row-gap: 20px;
@@ -96,7 +97,7 @@ ul.nav-tienda {
   div.main-tienda {
     display: grid;
     grid-template-columns: 30vw 30vw 30vw;
-    grid-template-rows: 100vh;
+    grid-template-rows: 70vh;
     justify-items: center;
     margin: 20px 5%;
     row-gap: 20px;

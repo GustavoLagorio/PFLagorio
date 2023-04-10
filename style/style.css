@@ -12,7 +12,7 @@ a {
   color: black; }
 
 .btn:hover, a:hover {
-  transform: scale(1.15, 1.15);
+  transform: scale(1.1, 1.1);
   font-weight: bold; }
 
 * {
@@ -146,9 +146,10 @@ ul.nav-tienda {
     width: 100%;
     height: 100%; }
     .main-tienda-tortas .articulo img {
-      height: 70%;
+      width: 95%;
       object-fit: cover;
-      border-radius: 1em; }
+      border-radius: 1em;
+      overflow: hidden; }
     .main-tienda-tortas .articulo a {
       margin-top: 10px; }
 
@@ -173,14 +174,14 @@ ul.nav-tienda {
   div.main-tienda-tortas {
     display: grid;
     grid-template-columns: 30vw 30vw 30vw;
-    grid-template-rows: repeat(2, 100vh);
+    grid-template-rows: repeat(2, 70vh);
     justify-items: center;
     margin: 20px 5%;
     row-gap: 20px; }
   div.main-tienda {
     display: grid;
     grid-template-columns: 30vw 30vw 30vw;
-    grid-template-rows: 100vh;
+    grid-template-rows: 70vh;
     justify-items: center;
     margin: 20px 5%;
     row-gap: 20px; } }
@@ -311,7 +312,21 @@ ul.nav-tienda {
     margin: 20px 5%;
     display: grid;
     grid-template-columns: 50vw 40vw;
-    grid-template-rows: 7vh 25vh 25vh 7vh 70vh;
+    grid-template-rows: 7vh 27vh 27vh 7vh 70vh;
+    grid-template-areas: "title-acerca title-acerca" "historia1 img-acerca" "historia2 img-acerca" "title-gallery title-gallery" "galeria galeria";
+    row-gap: 10px;
+    column-gap: 10px; }
+    .main-acerca .img-acerca img {
+      height: auto;
+      width: 100%; } }
+
+@media (min-width: 1440px) {
+  .main-acerca {
+    width: 90%;
+    margin: 20px 5%;
+    display: grid;
+    grid-template-columns: 50vw 40vw;
+    grid-template-rows: 7vh 20vh 20vh 7vh 70vh;
     grid-template-areas: "title-acerca title-acerca" "historia1 img-acerca" "historia2 img-acerca" "title-gallery title-gallery" "galeria galeria";
     row-gap: 10px;
     column-gap: 10px; }
