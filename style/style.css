@@ -15,6 +15,16 @@ a {
   transform: scale(1.1, 1.1);
   font-weight: bold; }
 
+article, div.card-body, p {
+  animation-name: text;
+  animation-duration: 2s; }
+
+@keyframes text {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 * {
   font-family: 'Montserrat', sans-serif;
   font-size: 16px; }
@@ -421,3 +431,19 @@ input.email {
     object-fit: cover;
     object-position: center center;
     border-radius: 1em; } }
+
+.wireframe {
+  margin: 20px 5%; }
+  .wireframe p {
+    width: 100%; }
+  .wireframe .row {
+    width: 100%; }
+    .wireframe .row h2 {
+      text-align: center; }
+    .wireframe .row div {
+      margin: 20px 0; }
+      .wireframe .row div img {
+        width: 100%;
+        object-fit: cover;
+        object-position: center center;
+        border-radius: 1em; }

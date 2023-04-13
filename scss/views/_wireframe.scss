@@ -1,0 +1,25 @@
+.wireframe {
+    margin: 20px 5%;
+
+    p {
+        width: 100%;
+    }
+
+    .row {
+        width: 100%;
+
+        h2 {
+            text-align: center;
+        }
+
+        div{
+            margin: 20px 0;
+            img {
+                width: 100%;
+                object-fit: cover;
+                object-position: center center;
+                border-radius: 1em;
+            }
+        }
+    }
+}
